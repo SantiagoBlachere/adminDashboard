@@ -10,6 +10,11 @@ body {
     display: grid;
     grid-template-columns: max(250px, 10%) 3fr;
     font-family: Kotori;
+    color: black;
+}
+main{
+    padding: 0;
+    margin: 0;
 }
 li {
     list-style-type: none;
@@ -19,6 +24,8 @@ li {
     grid-column: 1 / 2;
     grid-template-rows: 100px 1fr 2fr;
     padding-left: 20px;
+    color: #01161e;
+    background-color: #DAC0A3
     
 }
 
@@ -62,18 +69,81 @@ li {
     
 }
 header {
-    margin-top: 15px;
+    background-color: #F8F0E5;
+    height: 50px;
     display: grid;
     grid-column: 2 / 3;
-    grid-template-columns: 1fr 4fr 1fr 1fr 2fr;
+    grid-template-columns: 50px 3fr 80px 50px 1fr;
     align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    
+}
+a {
+    
+    display: flex;
+    
+}
+header a:first-of-type {
+    grid-column: 1 / 2;
+    justify-self: flex-end;
+    width: 20px;
+}
+header a {
+   
+    width: 20px;
+    justify-self: flex-end;
 }
 
-
+.drawnIcon {
+    justify-self: flex-start;   
+    
+    
+}
+header h3 {
+    justify-self: flex-start;
+    
+}
+input[type=search] {
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #DAC0A3
+}
 nav {
+    background-color: #F8F0E5;
+    padding-top: 15px;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 4fr 3fr;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    box-shadow: 0px 8px 7px -7px #0F2C59;
+-webkit-box-shadow: 0px 8px 7px -7px #0F2C59;
+-moz-box-shadow: 0px 8px 7px -7px #0F2C59;
+}
+nav img {
+    grid-column: 1 / 2;
+    justify-self: flex-end;
+    padding-right: 20px;
+}
+.navButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 75px;
+    gap: 20px;
+    
+    
+}
+.navButtons button {
+    padding: 10px;
+    color: white;
+    background-color: #0F2C59;
+    border: none;
+    border-radius: 20px;
 }
 .mainDashboard {
     grid-column: 2 / 3;
@@ -83,13 +153,43 @@ nav {
 .projects {
     margin-top: 10px;
     grid-column: 1 / 2;
+    
     display: grid;
     padding-right: 15px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
     gap: 10px;
+    
 }
-.projects div {
+
+.projectsSection {
+    padding-left: 20px;
+    padding-top: 30px;
+    background-color: #EADBC8;
+}
+
+.projectItem {
+    padding: 5px;
     height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 8px 70px -7px rgba(15,44,89,0.53);
+-webkit-box-shadow: 0px 8px 70px -7px rgba(15,44,89,0.53);
+-moz-box-shadow: 0px 8px 70px -7px rgba(15,44,89,0.53);
+}
+.interactiveSectionProject {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: flex-end;
+    padding-right: 10px;
+    gap: 10px;
+    align-content: flex-start;
+}
+a img {
+    width: 20px;
 }
 
 .announcements {
